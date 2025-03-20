@@ -1,0 +1,19 @@
+Cuchina app:
+
+
+project/
+│
+├── app.py             # Main application entry point
+├── config.py          # Configuration settings (DB credentials, API keys, etc.)
+├── models.py          # Database models
+├── routes/
+│   ├── recommendations.py # Recommendation-related endpoints
+│   ├── dishes.py          # Dish and customization endpoints
+│   ├── users.py           # User-related endpoints
+│   ├── orders.py          # Order-related endpoints
+│
+├── utils/
+│   ├── recommendation_engine.py # Recommendation system logic
+│   ├── context_processor.py     # Context-aware data handling
+│
+└── requirements.txt    # Python dependencies

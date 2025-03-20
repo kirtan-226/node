@@ -395,7 +395,7 @@ const PlateCustomization = ({ dishes }) => {
                 }))
             );
     
-            const response = await fetch("http://localhost:5000/api/order", {
+            const response = await fetch("http://15.207.254.20:5000/api/order", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

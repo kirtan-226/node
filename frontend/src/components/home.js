@@ -31,7 +31,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await fetch("http://15.207.254.20:5000/api/dish");
+        const response = await fetch("https://15.207.254.20:5000/api/dish");
         const data = await response.json();
         
         // Log dish names for reference
@@ -54,7 +54,7 @@ const HomePage = () => {
 
   const handleCardClick = async (dishId) => {
     try {
-      const response = await axios.post("http://15.207.254.20:5000/api/dish", {
+      const response = await axios.post("https://15.207.254.20:5000/api/dish", {
         dishId,
       });
       if (response.data) {

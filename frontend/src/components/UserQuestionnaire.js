@@ -35,7 +35,7 @@ const SurveyQuestions = () => {
         }
 
         const response = await axios.post(
-            'http://15.207.254.20:5000/api/survey/post_answers',
+            'https://15.207.254.20:5000/api/survey/post_answers',
             { answers, user_id },
         );
 

@@ -48,7 +48,7 @@ const Login = ({ onLoginSuccess }) => {
         }
 
         try {
-            const response = await axios.post('http://15.207.254.20:5000/api/login/login', {
+            const response = await axios.post('https://15.207.254.20:5000/api/login/login', {
                 username,
                 password
             });
@@ -84,7 +84,7 @@ const Login = ({ onLoginSuccess }) => {
         // }
 
         try {
-            const response = await axios.post('http://15.207.254.20:5000/api/login/create-account', {
+            const response = await axios.post('https://15.207.254.20:5000/api/login/create-account', {
                 username,
                 password
             });
@@ -104,7 +104,7 @@ const Login = ({ onLoginSuccess }) => {
     };
     const handleGoogleLoginSuccess = async (response) => {
         try {
-            const serverResponse = await axios.post('http://15.207.254.20:5000/api/login/google-login', {
+            const serverResponse = await axios.post('https://15.207.254.20:5000/api/login/google-login', {
                 token: response.credential // Ensure you're sending the token correctly here
             });
             // console.log('kirtan J Limbahciya',serverResponse.data.token);

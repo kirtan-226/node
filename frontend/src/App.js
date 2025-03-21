@@ -13,7 +13,7 @@ const App = () => {
     useEffect(() => {
         const fetchDishes = async () => {
             try {
-                const response = await fetch("http://15.207.254.20:5000/api/dish");
+                const response = await fetch("https://15.207.254.20:5000/api/dish");
                 const data = await response.json();
                 setDishes(data);
             } catch (error) {
